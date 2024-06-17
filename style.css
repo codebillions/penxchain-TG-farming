@@ -1,0 +1,1166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Tap button => #222222 */
+
+/* text => #ef9d4d */
+
+
+/* filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg); */
+
+/* box-shadow: 0px -25px 20px -20px rgba(19, 19, 19, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45); */
+
+@font-face {
+
+    font-family: 'bold';
+    src: url("font/Poppins-Bold.ttf");
+}
+
+
+@font-face {
+
+    font-family: 'xbold';
+    src: url("font/Poppins-ExtraBold.ttf") format('truetype');
+}
+
+
+@font-face {
+
+    font-family: 'normal';
+    src: url("font/Poppins-Light.ttf") format('truetype');
+}
+
+@font-face {
+
+    font-family: 'medium';
+    src: url("font/Poppins-Medium.ttf") format('truetype');
+}
+
+
+a:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+body {
+    background: #181818;
+    height: fit-content;
+}
+
+    /* button {
+        box-shadow: none !important;
+        color: white;
+    } */
+
+
+a {
+    font-family: 'normal', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+
+h1,
+h2 {
+    font-family: 'bold', sans-serif;
+    color: white !important;
+    font-weight: bold;
+}
+
+h3,h4 {
+    font-family: 'medium', sans-serif;
+    color: white !important;
+}
+
+p {
+    font-family: 'normal', sans-serif;
+    font-weight: normal;
+    color: white !important;
+}
+
+
+
+/* ----------------------------- tap setion ------------------------------ */
+
+.tap{
+    width: 100%;
+    height: fit-content;
+}
+
+.tap .tap-container{
+    background: #181818;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    border: none;
+    padding: 0 20px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0px -25px 20px -20px rgba(19, 19, 19, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.tap .tap-container h1{
+    margin-top: 40px;
+    color: #ef9d4d !important;
+}
+
+.tap .tap-container .tap-button h3{
+    margin-top: 35px;
+    color: white !important;
+}
+
+.tap .tap-container .tap-button h3 img{
+    width: 35px;
+    margin-top: -5px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+}
+
+.tap .tap-container .tap-button p button{
+    padding: 50px;
+    border: none;
+    border-radius: 50%;
+    margin-top: 35px;
+    position: relative;
+    outline: none;
+    z-index: 0;
+}
+
+.tap .tap-container .tap-button p button:after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.tap .tap-container .tap-button p button:before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00CB, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+
+.tap .tap-container .tap-button p button img{
+    width: 100px;
+}
+
+.tap .tap-container .tap-button .total-daily-tap{
+    margin-top: 50px;
+    color: #ef9d4d !important;
+}
+
+.tap .tap-container .lead{
+    width: 100%;
+    height: fit-content;
+}
+
+.tap .tap-container .lead p a{
+    color: white;
+}
+
+.tap .tap-container .lead p a img{
+    width: 10px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+}
+
+
+.tap .tap-container .menu{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tap .tap-container .menu .menu-text-holder .active{
+    border: 2px solid #ef9d4d;
+    border-radius: 7px;
+    background: #413830;
+}
+
+.tap .tap-container .menu .menu-text-holder a{
+    background: #222222;
+    color: white;
+    margin-left: 5px;
+    padding: 5px 20px 5px 20px;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px -25px 20px -20px rgba(19, 19, 19, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.tap .tap-container .menu .menu-text-holder a img{
+    width: 20px;
+    margin-right: 5px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+}
+
+
+
+
+/* -------------------------------------------stats page----------------------------------------------------- */
+
+.tap-container .share-stats{
+   font-size: 14px;
+   margin-top: 60px;
+   color: #afaeae !important;
+}
+
+.tap-container .share {
+    font-size: 60px;
+}
+
+.tap-container h3 img{
+    width: 60px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-top: -10px;
+}
+
+
+.tap-container .other-stats-main{
+    margin-top: 70px;
+    font-size: 14px;
+    color: #afaeae !important;
+}
+
+.tap-container h4{
+    margin-top: -15px;
+}
+
+.tap-container .other-stats{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #afaeae !important;
+}
+
+
+
+/* -------------------------------------------------------- boooster page ----------------------------------------------------- */
+
+.tap-container .boost-header{
+    margin-top: 50px;
+}
+
+
+.tap-container .active-booster{
+    margin-top: 80px !important;
+}
+
+
+.tap-container .boosters{
+    width: 90%;
+    height: fit-content;
+    background: #222222;
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px -25px 20px -20px rgba(19, 19, 19, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.tap-container .boosters a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.tap-container .boosters a p{
+    font-size: 25px;
+    color: #ef9d4d !important;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+.tap-container .boosters a p .main-img {
+    width: 35px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+}
+
+.tap-container .boosters a p .arrow{
+    width: 15px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 80%;
+}
+
+.tap-container .boosters a p .arrow-2{
+    width: 15px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 74%;
+}
+
+.tap-container .boosters a p .arrow-3{
+    width: 15px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 70%;
+}
+
+.tap-container .boosters .action p{
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+.tap-container .boosters .action p img{
+    width: 20px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+
+
+ /* --------------------------------------  leader board page -------------------------------------- */
+.leader-sec{
+    margin-top: 50px !important;
+}
+
+ .tap-container .lead-board-header{
+    margin-top: 70px;
+    color: #ef9d4d !important;
+}
+
+
+
+
+/* -------------------------------------------------- copy link section ------------------------------------------------- */
+
+.tap-container .ref-link-box{
+    background: #222222;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.tap-container .ref-link-box .copy-link-btn{
+    padding: 5px 30px 5px 30px !important;
+    border: none;
+    border-radius: 5px;
+    background: #ef9d4d;
+    margin-top: 25px;
+}
+
+.devider{
+    margin-top: 25%;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------- Task page ----------------------------------------------------- */
+
+.tap-container .task-header{
+    margin-top: 50px;
+}
+
+
+.tap-container .active-task{
+    margin-top: 80px !important;
+}
+
+
+.tap-container .tasks{
+    width: 90%;
+    height: fit-content;
+    background: #222222;
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px -25px 20px -20px rgba(19, 19, 19, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.tap-container .tasks a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.tap-container .tasks a p{
+    font-size: 25px;
+    color: #ef9d4d !important;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+.tap-container .tasks a p .main-img {
+    width: 35px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+}
+
+.tap-container .tasks a p .arrow{
+    width: 15px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 80%;
+}
+
+.tap-container .tasks a p .arrow-2{
+    width: 15px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 74%;
+}
+
+.tap-container .tasks a p .arrow-3{
+    width: 15px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 70%;
+}
+
+.tap-container .tasks .action p{
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+.tap-container .tasks .action p img{
+    width: 20px;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------ responsive views -----------------------*/
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1020px) {
+    
+/* ----------------------------- tap setion ------------------------------ */
+
+.tap .tap-container{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.tap .tap-container .tap-button h3{
+    margin-top: 40px;
+}
+
+.tap .tap-container .tap-button h3 img{
+    width: 35px;
+}
+
+.tap .tap-container .tap-button p button{
+    margin-top: 35px;
+}
+
+.tap .tap-container .tap-button p button img{
+    width: 70px;
+}
+
+
+
+/* -------------------------------------------stats page----------------------------------------------------- */
+
+.tap-container .share-stats{
+   font-size: 14px;
+   margin-top: 70px;
+}
+
+.tap-container .share {
+    font-size: 45px;
+}
+
+.tap-container h3 img{
+    width: 50px;
+    margin-top: -10px;
+}
+
+
+.tap-container .other-stats-main{
+    margin-top: 80px;
+    font-size: 14px;
+}
+
+.tap-container h4{
+    margin-top: -13x;
+}
+
+.tap-container .other-stats{
+    font-size: 14px;
+}
+
+
+
+/* -------------------------------------------------------- boooster page ----------------------------------------------------- */
+
+.tap-container .boost-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-booster{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .boosters{
+    width: 90%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.tap-container .boosters a p{
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .boosters a p .main-img {
+    width: 30px;
+}
+
+.tap-container .boosters .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .boosters .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+
+
+
+
+
+/* -------------------------------------------------------- task page ----------------------------------------------------- */
+
+.tap-container .task-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-task{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .tasks{
+    width: 90%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.tap-container .tasks a p{
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .tasks a p .main-img {
+    width: 30px;
+}
+
+.tap-container .tasks .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .tasks .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+
+    
+}
+
+
+
+
+
+
+
+/* for large mobile view  */
+@media only screen and (min-width: 500px) and (max-width: 767px) and (orientation: portrait) {
+
+/* ----------------------------- tap setion ------------------------------ */
+
+.tap .tap-container{
+    width: 95%;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.tap .tap-container .tap-button h3{
+    margin-top: 30px;
+}
+
+.tap .tap-container .tap-button h3 img{
+    width: 30px;
+}
+
+
+.tap .tap-container .tap-button p button{
+    margin-top: 35px;
+}
+
+.tap .tap-container .tap-button p button img{
+    width: 70px;
+}
+
+
+.tap .tap-container .tap-button .total-daily-tap{
+    margin-top: 50px;
+}
+
+
+
+.tap .tap-container .lead p a{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.tap .tap-container .lead p a img{
+    width: 7px;
+    margin-left: 5px;
+}
+
+.tap .tap-container .menu .menu-text-holder a{
+    margin-left: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-top: 10px;
+}
+
+.tap .tap-container .menu .menu-text-holder a img{
+    width: 17px;
+}
+
+
+
+/* -------------------------------------------stats page----------------------------------------------------- */
+
+.tap-container .share-stats{
+   font-size: 12px;
+   margin-top: 70px;
+}
+
+.tap-container .share {
+    font-size: 40px;
+}
+
+.tap-container h3 img{
+    width: 45px;
+    margin-top: -7px;
+}
+
+
+.tap-container .other-stats-main{
+    margin-top: 80px;
+    font-size: 12px;
+}
+
+.tap-container h4{
+    margin-top: -13x;
+}
+
+.tap-container .other-stats{
+    font-size: 12px;
+}
+
+
+
+/* -------------------------------------------------------- boooster page ----------------------------------------------------- */
+
+.tap-container .boost-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-booster{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .boosters{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.tap-container .boosters a p{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .boosters a p .main-img {
+    width: 30px;
+}
+
+.tap-container .boosters .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .boosters .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+
+
+
+/* -------------------------------------------------- copy link section ------------------------------------------------- */
+
+.devider{
+    margin-top: 60%;
+}
+
+
+
+/* -------------------------------------------------------- task page ----------------------------------------------------- */
+
+.tap-container .task-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-task{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .tasks{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.tap-container .tasks a p{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .tasks a p .main-img {
+    width: 30px;
+}
+
+.tap-container .tasks .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .tasks .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+
+
+}
+
+
+
+
+
+
+/* For Mobile Portrait View */
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) and (orientation: portrait) {
+
+    /* ----------------------------- tap setion ------------------------------ */
+
+.tap .tap-container{
+    width: 100%;
+    margin-left: 0;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.tap .tap-container .tap-button h3{
+    margin-top: 30px;
+}
+
+.tap .tap-container .tap-button h3 img{
+    width: 30px;
+}
+
+.tap .tap-container .tap-button p button{
+    margin-top: 35px;
+}
+
+.tap .tap-container .tap-button p button img{
+    width: 70px;
+}
+
+
+
+.tap .tap-container .lead p a{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.tap .tap-container .lead p a img{
+    width: 7px;
+    margin-left: 5px;
+}
+
+.tap .tap-container .menu .menu-text-holder a{
+    margin-left: 1px;
+    padding: 5px 15px 5px 15px;
+    margin-top: 10px;
+}
+
+.tap .tap-container .menu .menu-text-holder a img{
+    width: 17px;
+}
+
+
+
+
+/* -------------------------------------------stats page----------------------------------------------------- */
+
+.tap-container .share-stats{
+   font-size: 12px;
+   margin-top: 70px;
+}
+
+.tap-container .share {
+    font-size: 35px;
+}
+
+.tap-container h3 img{
+    width: 40px;
+    margin-top: -7px;
+}
+
+
+.tap-container .other-stats-main{
+    margin-top: 80px;
+    font-size: 12px;
+}
+
+.tap-container h4{
+    margin-top: -13x;
+}
+
+.tap-container .other-stats{
+    font-size: 12px;
+}
+
+
+
+
+/* -------------------------------------------------------- boooster page ----------------------------------------------------- */
+
+.tap-container .boost-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-booster{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .boosters{
+    width: 90%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 17px;
+    border-radius: 10px;
+}
+
+.tap-container .boosters a p{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .boosters a p .main-img {
+    width: 30px;
+}
+
+.tap-container .boosters .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .boosters .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+
+
+
+/* -------------------------------------------------- copy link section ------------------------------------------------- */
+
+.tap-container .ref-link-box{
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.devider{
+    margin-top: 70%;
+}
+
+
+
+
+/* -------------------------------------------------------- task page ----------------------------------------------------- */
+
+.tap-container .task-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-task{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .tasks{
+    width: 90%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 17px;
+    border-radius: 10px;
+}
+
+.tap-container .tasks a p{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .tasks a p .main-img {
+    width: 30px;
+}
+
+.tap-container .tasks .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .tasks .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+   
+}
+
+
+
+
+
+
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 667px) and (orientation: landscape) {
+
+    /* ----------------------------- tap setion ------------------------------ */
+
+.tap .tap-container{
+    width: 85%;
+    margin-left: 45px;
+    border-radius: 15px;
+}
+
+.tap .tap-container .tap-button h3{
+    margin-top: 30px;
+}
+
+.tap .tap-container .tap-button h3 img{
+    width: 30px;
+}
+
+.tap .tap-container .tap-button p button{
+    margin-top: 35px;
+}
+
+.tap .tap-container .tap-button p button img{
+    width: 70px;
+}
+
+
+.tap .tap-container .lead p a{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.tap .tap-container .lead p a img{
+    width: 7px;
+    margin-left: 5px;
+}
+
+.tap .tap-container .menu .menu-text-holder a{
+    margin-left: 3px;
+    padding: 5px 15px 5px 15px;
+}
+
+.tap .tap-container .menu .menu-text-holder a img{
+    width: 17px;
+}
+
+
+
+/* -------------------------------------------stats page----------------------------------------------------- */
+
+.tap-container .share-stats{
+   font-size: 12px;
+   margin-top: 70px;
+}
+
+.tap-container .share {
+    font-size: 35px;
+}
+
+.tap-container h3 img{
+    width: 40px;
+    margin-top: -7px;
+}
+
+
+.tap-container .other-stats-main{
+    margin-top: 80px;
+    font-size: 12px;
+}
+
+.tap-container h4{
+    margin-top: -13x;
+}
+
+.tap-container .other-stats{
+    font-size: 12px;
+}
+
+
+
+/* -------------------------------------------------------- boooster page ----------------------------------------------------- */
+
+.tap-container .boost-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-booster{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .boosters{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.tap-container .boosters a p{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .boosters a p .main-img {
+    width: 30px;
+}
+
+.tap-container .boosters .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .boosters .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+
+
+
+
+/* -------------------------------------------------------- task page ----------------------------------------------------- */
+
+.tap-container .task-header{
+    margin-top: 60px;
+}
+
+
+.tap-container .active-task{
+    margin-top: 90px !important;
+}
+
+
+.tap-container .tasks{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+.tap-container .tasks a p{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.tap-container .tasks a p .main-img {
+    width: 30px;
+}
+
+.tap-container .tasks .action p{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.tap-container .tasks .action p img{
+    width: 18px;
+    margin-top: -2px;
+}
+     
+  }
+
+
+
+
+
+
+  
