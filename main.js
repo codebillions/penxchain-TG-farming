@@ -1,7 +1,7 @@
 AOS.init();
 
-// const queryString = Telegram.WebApp.initData; 
-const queryString = "telegramBot";
+const queryString = Telegram.WebApp.initData; 
+// const queryString = "telegramBot";
 // check if query string is initialised if not direct to error page (Login from telgeram)
 
 // Function to make a POST request with JSON data
